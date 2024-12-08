@@ -7,7 +7,7 @@ app = Flask(__name__)
 bcrypt = Bcrypt(app)
 
 # Set up secret key for sessions
-app.secret_key = 'your_API_key'  # Use a unique, secret key
+app.secret_key = 'your_secret_key'  # Use a unique, secret key
 
 # MongoDB connection
 client = MongoClient("mongodb://localhost:27017")  # Replace with your MongoDB URI
